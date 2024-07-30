@@ -26,17 +26,15 @@ body{
 }
 
 .header__menu {
-    width: 274px;
     display: flex;
-    justify-content: space-between;
-    position: absolute;
+    gap: 80px
 }
 
 .header__menu__link{
     text-decoration: none;
     color: var(--color-terciario);
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     transition: transform 0.3s ease;
 }
@@ -51,10 +49,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .presentacion__contenido {
-    width: 615px;
+    width: 50%;
     margin-right: 40px;
     display: flex;
     flex-direction: column; 
@@ -62,7 +61,7 @@ body{
 }
 
 .presentacion__contenido__titulo {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fuente-krona);
 }
 
@@ -72,7 +71,7 @@ body{
 
 .presentacion__contenido__parrafo,
 .presentacion__contenido__boton {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-montserrat);
 }
 
@@ -86,12 +85,12 @@ body{
 
 .presentacion__contenido__subtitulo {
     font-family: var(--fuente-krona);
-    font-size: 24px;
+    font-size: 1.5rem;
 
 }
 
 .presentacion__contenido__boton {
-    width: 378px;
+    width: 50%;
     text-align: center;
     border: 2px solid var(--color-terciario);
     border-radius: 8px;
@@ -112,6 +111,10 @@ body{
     background-color: var(--color-hover);
 }
 
+.presentacion__imagen {
+    width: 50%;
+}
+
 .footer {
     background-color: var(--color-terciario);
     width: 100%;
@@ -123,6 +126,34 @@ body{
 
 .footer__titulo{
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
+
+
+
+@media (max-width: 1200px) {
+
+    .header{
+        padding: 10%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion__contenido {
+        width: auto;
+        margin-right: 0px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
+
